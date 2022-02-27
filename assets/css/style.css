@@ -9,3 +9,52 @@ body {
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
+:root {
+  --theme-color: #89c74a;
+}
+header {
+  padding: 10px 0;
+  background-color: var(--theme-color);
+}
+.logo img {
+  max-width: 150px;
+}
+.search-form {
+  padding-top: 19px;
+}
+.search-form input[type="text"] {
+  width: 100%;
+  padding: 10px 22px;
+  border-radius: 34px;
+}
+/* .search-form input:focus-visible{
+    offline-outset:none;
+} */
+.search-form .searchButton {
+  right: 1px;
+  bottom: 2px;
+  background-color: #f7b111;
+  padding: 10px 25px;
+  border-radius: 34px;
+}
+.account-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account-link .icon-style {
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  background: #f7b111;
+  border-radius: 50%;
+  /* margin-left: 30px; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.account-link i {
+  font-size: 24px;
+}
