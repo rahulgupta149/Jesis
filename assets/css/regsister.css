@@ -1,0 +1,16 @@
+.register-form .form-control{
+    background: #f7f7f9;
+    height: 54px;
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e6eaf3;
+    background-clip: initial;
+}
+.register-form .form-control:focus{
+    border-color: #1ca301;
+}
+.register-form{
+    background-color: red;
+}

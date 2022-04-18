@@ -1,0 +1,156 @@
+.form-control:focus{
+    box-shadow: none;
+    border-color: 1px solid #BCE3C9 !important;
+}
+.login-form {
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: var(--white-color);
+}
+.login-form-user-social {
+    width: 100%
+}
+
+.login-form-user-social li {
+    margin-bottom: 20px
+}
+
+.login-form-user-social li a {
+    display: block;
+    font-size: 15px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white-color);
+    background: #119744;
+
+}
+
+.login-form-user-social li a i {
+    font-size: 16px;
+    margin-right: 10px
+}
+
+.login-form-user-social li:last-child {
+    margin-bottom: 0px
+}
+
+.login-form-user-social .facebook {
+    background: #3b5998
+}
+
+.login-form-user-social .twitter {
+    background: #00acee
+}
+
+.login-form-user-social .gmail{
+    background: #e60023 !important
+}
+
+.login-form-user-social .instagram {
+    background: #f77737
+}
+.login-form-user {
+    width: 100%
+}
+
+.login-form-user .form-group {
+    margin-bottom: 20px
+}
+
+.form-button {
+    text-align: center
+}
+
+.form-button button {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 45px;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: #119744;
+    border: none;
+}
+
+.form-button p {
+    font-size: 15px;
+    margin-top: 12px;
+    text-transform: capitalize
+}
+
+.form-button p a {
+    font-weight: 500;
+    margin-left: 5px;
+    color:  #119744
+}
+
+.form-button p a:hover {
+    text-decoration: underline
+}
+
+.login-form-user-remind {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border)
+}
+
+.login-form-user-remind p {
+    font-size: 15px;
+    text-transform: capitalize
+}
+
+.login-form-user-remind p a {
+    font-weight: 500;
+    margin-left: 5px;
+    color: var(--primary)
+}
+
+.login-form-user-remind p a:hover {
+    text-decoration: underline
+}
+
+.login-form-user-footer {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px
+}
+
+.login-form-user-footer p {
+    font-size: 14px;
+    color: var(--gray)
+}
+
+.login-form-user-footer p a {
+    color: var(--primary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s
+}
+
+.login-form-user-footer p a:hover {
+    text-decoration: underline
+}
+
+@media (max-width: 575px) {
+    .login-form {
+        padding: 20px
+    }
+}
+
+@media (max-width: 767px) {
+    .login-form-group {
+        display: inherit;
+    }
+}
