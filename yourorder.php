@@ -118,7 +118,7 @@ include_once('partials/header.php');
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-9">
-                <div class="d-flex justify-content-between mb-15">
+                <div class="d-flex justify-content-between mb-15 shadow border p-2 background-white">
                     <div>
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -173,7 +173,7 @@ include_once('partials/header.php');
                         <table class="table background-white p-4  table-bordered table-sm">
                             <thead class="table thead thead p-4">
                                 <tr>
-                                    <th>Order Id</th>
+                                   
                                     <th>Ordered Date</th>
                                     <th>Ordered Image</th>
                                     <th>Qty</th>
@@ -183,9 +183,9 @@ include_once('partials/header.php');
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody text-center align-items-center">
+                            <tbody class="tbody  align-items-center">
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -203,7 +203,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -221,7 +221,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -239,7 +239,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -257,7 +257,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -281,7 +281,7 @@ include_once('partials/header.php');
                         <table class="table background-white p-4  table-bordered table-sm">
                             <thead class="table thead thead p-4">
                                 <tr>
-                                    <th>Order Id</th>
+                                   
                                     <th>Ordered Date</th>
                                     <th>Ordered Image</th>
                                     <th>Qty</th>
@@ -291,9 +291,9 @@ include_once('partials/header.php');
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody text-center align-items-center">
+                            <tbody class="tbody  align-items-center">
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -311,7 +311,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -329,7 +329,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -347,7 +347,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -365,7 +365,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -389,7 +389,7 @@ include_once('partials/header.php');
                         <table class="table background-white  table-bordered table-sm">
                             <thead class="table thead thead p-4">
                                 <tr>
-                                    <th>Order Id</th>
+                                   
                                     <th>Ordered Date</th>
                                     <th>Ordered Image</th>
                                     <th>Qty</th>
@@ -399,9 +399,9 @@ include_once('partials/header.php');
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody text-center align-items-center">
+                            <tbody class="tbody align-items-center">
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -419,7 +419,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -437,7 +437,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -455,7 +455,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -473,7 +473,7 @@ include_once('partials/header.php');
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -497,80 +497,72 @@ include_once('partials/header.php');
                         <table class="table background-white table-bordered table-sm">
                             <thead class="table thead thead p-4">
                                 <tr>
-                                    <th>Order Id</th>
                                     <th>Ordered Date</th>
                                     <th>Ordered Image</th>
                                     <th>Qty</th>
-                                    <th>Amount</th>
-                                    <th>Payment Gateway</th>
                                     <th>Order Status</th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody text-center align-items-center">
+                            <tbody class="tbody">
                                 <tr>
-                                    <td>123</td>
                                     <td>27/10/2022</td>
                                     <td>
-                                        <div class="text-center">
+                                        <div>
                                             <img src="assets/image/order1.jpg" width="80px" height="80px" alt="" class="img-fluid">
                                         </div>
                                     </td>
                                     <td>3</td>
-                                    <td>3000</td>
-                                    <td>Cash On Delivery</td>
-                                    <td>Cancelled</td>
+                                    <td>
+                                        <a href="returndetails.php" class="text-primary fw-bold">Click for More Details</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
                                     <td>27/10/2022</td>
                                     <td>
-                                        <div class="text-center">
+                                        <div>
                                             <img src="assets/image/order1.jpg" width="80px" height="80px" alt="" class="img-fluid">
                                         </div>
                                     </td>
                                     <td>3</td>
-                                    <td>3000</td>
-                                    <td>Cash On Delivery</td>
-                                    <td>Cancelled</td>
+                                    <td>
+                                        <a href="returndetails.php" class="text-primary fw-bold">Click for More Details</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
                                     <td>27/10/2022</td>
                                     <td>
-                                        <div class="text-center">
+                                        <div>
                                             <img src="assets/image/order1.jpg" width="80px" height="80px" alt="" class="img-fluid">
                                         </div>
                                     </td>
                                     <td>3</td>
-                                    <td>3000</td>
-                                    <td>Cash On Delivery</td>
-                                    <td>Cancelled</td>
+                                    <td>
+                                        <a href="returndetails.php" class="text-primary fw-bold">Click for More Details</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
                                     <td>27/10/2022</td>
                                     <td>
-                                        <div class="text-center">
+                                        <div>
                                             <img src="assets/image/order1.jpg" width="80px" height="80px" alt="" class="img-fluid">
                                         </div>
                                     </td>
                                     <td>3</td>
-                                    <td>3000</td>
-                                    <td>Cash On Delivery</td>
-                                    <td>Cancelled</td>
+                                    <td>
+                                        <a href="returndetails.php" class="text-primary fw-bold">Click for More Details</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
                                     <td>27/10/2022</td>
                                     <td>
-                                        <div class="text-center">
+                                        <div>
                                             <img src="assets/image/order1.jpg" width="80px" height="80px" alt="" class="img-fluid">
                                         </div>
                                     </td>
                                     <td>3</td>
-                                    <td>3000</td>
-                                    <td>Cash On Delivery</td>
-                                    <td>Cancelled</td>
+                                    <td>
+                                        <a href="returndetails.php" class="text-primary fw-bold">Click for More Details</a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -579,7 +571,7 @@ include_once('partials/header.php');
                         <table class="table background-white table-bordered table-sm">
                             <thead class="table thead thead p-4">
                                 <tr>
-                                    <th>Order Id</th>
+                                   
                                     <th>Ordered Date</th>
                                     <th>Ordered Image</th>
                                     <th>Qty</th>
@@ -588,9 +580,9 @@ include_once('partials/header.php');
                                     <th>Order Status</th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody text-center align-items-center">
+                            <tbody class="tbody  align-items-center">
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -603,7 +595,7 @@ include_once('partials/header.php');
                                     <td>Return</td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -616,7 +608,7 @@ include_once('partials/header.php');
                                     <td>Return</td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -629,7 +621,7 @@ include_once('partials/header.php');
                                     <td>Return</td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">
@@ -642,7 +634,7 @@ include_once('partials/header.php');
                                     <td>Return</td>
                                 </tr>
                                 <tr>
-                                    <td>123</td>
+                                    
                                     <td>27/10/2022</td>
                                     <td>
                                         <div class="text-center">

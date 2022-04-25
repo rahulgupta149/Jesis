@@ -2,7 +2,6 @@
 include_once('partials/header.php');
 
 ?>
-<!-- TODO: I am customer lai default checked rakhne and tei anusar ko tesko registration form aaos -->
 <section class="category-banner mt-4 mb-4">
     <div class="container-fluid">
         <div class="row">
@@ -28,71 +27,13 @@ include_once('partials/header.php');
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="login-form">
-                    <h3 class="login-form-title">Sign In</h3>
-                    <form>
-                        <div id="dvPassport" style="display: none">
-                            <div class="form-group mb-3">
-                                <label>Shop Email Address</label>
-                                <input type="text" class="form-control" placeholder="Enter your email address">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Enter your password">
-                            </div>
-                        </div>
-                        <div id="AddPassport">
-                            <div class="form-group mb-3">
-                                <label>Email Address</label>
-                                <input type="text" class="form-control" placeholder="Enter your email address">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Enter your password">
-                            </div>
-                            <div class="login-social-links mt-3">
-                                <div class="login-social-facebook text-center">
-                                    <i class="ti-facebook"></i>
-                                    <span>Login With Facebook</span>
-                                </div>
-                                <div class="login-social-gmail text-center mt-3 mb-3">
-                                <i class="fas fa-envelope me-3"></i>
-                                    <span>Login With Gmail</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between mb-4">
-                            <div>
-                                <label for="chkCustomer">
-                                    <input type="radio" name="1" id="chkCustomer" value="1" checked />
-                                    I am a Customer
-                                </label>
-                            </div>
-                            <div>
-                                <label for="chkPassport">
-                                    <input type="radio" name="1" id="chkPassport" value="0 v " />
-                                    I am a Vendor
-                                </label>
-                            </div>
-                        </div>
-
-
-                        <div class="login_flex">
-                            <div class="login_flex_1">
-                                <a href="forgot-password.php" class="text-bold">Forget Password?</a>
-                            </div>
-                            <div class="login_flex_2">
-                                <div class="form-group mb-0">
-                                    <button type="submit" class="btn btn-md btn-theme">Login</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                <div class="register-image">
+                    <img src="assets/image/loginImage.png" alt="registerImage" class="img-fluid">
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="login-form">
+                <div class="login-form p-5">
                     <h3 class="login-form-title">Create An Account</h3>
                     <form>
 
@@ -128,7 +69,7 @@ include_once('partials/header.php');
                                         <input type="password" class="form-control">
                                     </div>
                                 </div>
-                                <div class="login-social-links mt-3">
+                                <!-- <div class="login-social-links mt-3">
                                     <div class="login-social-facebook text-center">
                                         <i class="ti-facebook"></i>
                                         <span>Login With Facebook</span>
@@ -137,10 +78,10 @@ include_once('partials/header.php');
                                         <i class="fas fa-envelope me-3"></i>
                                         <span>Login With Gmail</span>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div id="registartionVendor" class="registartionVendor">
+                        <div id="registrationVendor" class="registrationVendor">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group mb-3">
@@ -200,7 +141,7 @@ include_once('partials/header.php');
                         </div>
 
                         <div class="col-lg-12 col-md-12">
-                            <div class="d-flex justify-content-end">
+                            <div class="text-center">
                                 <div class="form-group mb-0">
                                     <button type="submit" class="btn btn-md btn-theme">Sign Up</button>
                                 </div>
@@ -210,7 +151,102 @@ include_once('partials/header.php');
                 </form>
             </div>
         </div>
-    </div>
+        <div class="login-redirect text-center shadow border mt-3 mb-3 background-white rounded p-3">
+            <span>ALready have an Account?</span>
+            <a href="javascript:void(0)" class="text-primary" data-bs-toggle="modal" data-bs-target="#Login">Login Here</a>
+            <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6 col-md-6">
+                                    <div class="login-image">
+                                        <img src="assets/image/loginImage.png" alt="loginImage" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 col-md-6">
+                                    <form action="">
+                                        <div class="login-form p-5">
+                                            <h3 class="login-form-title">Sign In</h3>
+                                            <form>
+                                                <div id="dvPassport" style="display: none">
+                                                    <div class="form-group mb-3">
+                                                        <label>Shop Email Address</label>
+                                                        <input type="text" class="form-control" placeholder="Enter your email address">
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label>Password</label>
+                                                        <input type="password" class="form-control" placeholder="Enter your password">
+                                                    </div>
+                                                </div>
+                                                <div id="AddPassport">
+                                                    <div class="form-group mb-3">
+                                                        <label>Email Address</label>
+                                                        <input type="text" class="form-control" placeholder="Enter your email address">
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label>Password</label>
+                                                        <input type="password" class="form-control" placeholder="Enter your password">
+                                                    </div>
+                                                    <!-- <div class="login-social-links mt-3">
+                                                                                <div class="login-social-facebook text-center">
+                                                                                    <i class="ti-facebook"></i>
+                                                                                    <span>Login With Facebook</span>
+                                                                                </div>
+                                                                                <div class="login-social-gmail text-center mt-3 mb-3">
+                                                                                    <i class="fas fa-envelope me-3"></i>
+                                                                                    <span>Login With Gmail</span>
+                                                                                </div>
+                                                                            </div> -->
+                                                </div>
+                                                <div class="mt-20">
+                                                    <div>
+                                                        <label for="chkCustomer">
+                                                            <input type="radio" name="1" id="chkCustomer" value="1" checked />
+                                                            I am a Customer
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="chkPassport">
+                                                            <input type="radio" name="1" id="chkPassport" value="0 v " />
+                                                            I am a Trader
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="login_flex_2 mt-3 text-center">
+                                                    <div class="form-group mb-0">
+                                                        <button type="submit" class="btn btn-md btn-theme">Login</button>
+                                                    </div>
+                                                </div>
+
+
+                                            </form>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="login_flex mt-4">
+                                <div class="login_flex_1">
+                                    <a href="forgot-password.php" class="text-primary">Forget Password?</a>
+                                </div>
+                                <div class="new-account">
+                                    <span>Don't Have Any Account?
+                                        <a href="login.php" class="text-primary">Regsiter Here?</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

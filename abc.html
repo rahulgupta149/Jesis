@@ -1,14 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="header-login">
+        <a class="icon-link icon-link-2" data-bs-toggle="modal" data-bs-target="#Login">
+            <i class="fas fa-user"></i>
+            <span class="text">
+                <span class="sub">Login </span>
+                My Account </span>
+        </a>
+        <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 col-md-6">
+                                <div class="login-image">
+                                    <img src="assets/image/loginImage.png" alt="loginImage" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 col-md-6">
+                                <form action="">
+                                    <div class="login-form p-5">
+                                        <h3 class="login-form-title">Sign In</h3>
+                                        <form>
+                                            <div id="dvPassport" style="display: none">
+                                                <div class="form-group mb-3">
+                                                    <label>Shop Email Address</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter your email address">
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label>Password</label>
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Enter your password">
+                                                </div>
+                                            </div>
+                                            <div id="AddPassport">
+                                                <div class="form-group mb-3">
+                                                    <label>Email Address</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter your email address">
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label>Password</label>
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Enter your password">
+                                                </div>
+                                                <!-- <div class="login-social-links mt-3">
+                                                    <div class="login-social-facebook text-center">
+                                                        <i class="ti-facebook"></i>
+                                                        <span>Login With Facebook</span>
+                                                    </div>
+                                                    <div class="login-social-gmail text-center mt-3 mb-3">
+                                                        <i class="fas fa-envelope me-3"></i>
+                                                        <span>Login With Gmail</span>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="mt-20">
+                                                <div>
+                                                    <label for="chkCustomer">
+                                                        <input type="radio" name="1" id="chkCustomer" class="customerClass
+                                                        " value="1"
+                                                            checked />
+                                                        I am a Customer
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="chkPassport">
+                                                        <input type="radio" name="1" id="chkPassport" value="0 v " />
+                                                        I am a Trader
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="login_flex_2 mt-3 text-center">
+                                                <div class="form-group mb-0">
+                                                    <button type="submit" class="btn btn-md btn-theme">Login</button>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="login_flex mt-4">
+                            <div class="login_flex_1">
+                                <a href="forgot-password.php" class="text-primary">Forget Password?</a>
+                            </div>
+                            <div class="new-account">
+                                <span>Don't Have Any Account?
+                                    <a href="login.php" class="text-primary">Regsiter Here?</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/tablemanager.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelector("#dvPassport").style.display = "none";
+    document.querySelector("#registartionVendor").style.display = "none";
+
+    $(function () {
+        $("#chkPassport").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+
+    $(function () {
+        $("#chkCustomer").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").hide();
+                $("#AddPassport").show();
+            } else {
+                $("#dvPassport").show();
+                $("#AddPassport").hide();
+            }
+        });
+    });
+
+
+
+    $(function () {
+        $(".regCustomer").click(function () {
+            if ($("input[name=registration]").is(":checked")) {
+                $(".registrationCustomer").show();
+                $(".registartionVendor").hide();
+            } else {
+                $(".registrationCustomer").hide();
+                $(".registartionVendor").show();
+            }
+        });
+    });
+    $(function () {
+        $(".regVendor").click(function () {
+            if ($("input[name=registration]").is(":checked")) {
+                $(".registrationCustomer").hide();
+                $(".registartionVendor").show();
+            } else {
+                $(".registrationCustomer").show();
+                $(".registartionVendor").hide();
+            }
+        });
+    });
+</script>
+
 </html>

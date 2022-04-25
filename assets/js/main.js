@@ -1,4 +1,17 @@
+$(".modal form #comment").click(function (event) {
+	event.stopPropagation();
+
+});
+
 AOS.init();
+
+$('#showcoupon').on('click', function () {
+	$('#checkout_coupon').slideToggle(900);
+});
+$('#labelcashOnDelivery').on('click', function () {
+	$('#cahsonDelivery-detail').slideToggle(900);
+});
+
 
 $('.butcher-product-slider').owlCarousel({
 	loop: true,
@@ -36,37 +49,10 @@ $('.butcher-product-slider').owlCarousel({
 		$("#loading").fadeOut(500);
 	});
 
-	// 02. Mobile Menu Js
-	$('#mobile-menu').meanmenu({
-		meanMenuContainer: '.mobile-menu',
-		meanScreenWidth: "991",
-		meanExpand: ['<i class="fal fa-plus"></i>'],
-	});
 
-	// 03. Mobile Menu 2 Js
-	$('#mobile-menu-2').meanmenu({
-		meanMenuContainer: '.mobile-menu-2',
-		meanScreenWidth: "30000",
-		meanExpand: ['<i class="fal fa-plus"></i>'],
-	});
 
-	// 03. Sidebar Js
-	$(".offcanvas-toggle-btn").on("click", function () {
-		$(".offcanvas__area").addClass("opened");
-		$(".body-overlay").addClass("opened");
-	});
-	$(".offcanvas__close-btn").on("click", function () {
-		$(".offcanvas__area").removeClass("opened");
-		$(".body-overlay").removeClass("opened");
-	});
 
-	// // 04. Body overlay Js
-	// $(".body-overlay").on("click", function () {
-	// 	$(".offcanvas__area").removeClass("opened");
-	// 	$(".body-overlay").removeClass("opened");
-	// });
-
-	// 05. Search Js
+	//  Search Js
 	$(".search-toggle").on("click", function () {
 		$(".search__area").addClass("opened");
 	});
@@ -74,17 +60,8 @@ $('.butcher-product-slider').owlCarousel({
 		$(".search__area").removeClass("opened");
 	});
 
-	// // 06. Sticky Header Js
-	// windowOn.on('scroll', function () {
-	// 	var scroll = $(window).scrollTop();
-	// 	if (scroll < 100) {
-	// 		$("#header-sticky").removeClass("header-sticky");
-	// 	} else {
-	// 		$("#header-sticky").addClass("header-sticky");
-	// 	}
-	// });
 
-	// 07. Nice Select Js
+	// Nice Select Js
 	$('header-select').niceSelect();
 
 	$('.category-toggle-button').on('click', function () {
@@ -127,19 +104,6 @@ $("[data-countdown]").each(function () {
 });
 
 
-const allHoverImages = document.querySelectorAll('.hover-container div img')
-const imgContainer = document.querySelector('.img-container')
-
-window.addEventListener('DOMContentLoaded', () => {
-	allHoverImages[0].parentElement.classList.add('active');
-});
-
-allHoverImages.forEach((image) => {
-	image.addEventListener('mouseover', () => {
-		imgContainer.querySelector('img').src = image.src;
-	});
-});
-
 function myFunction() {
 	var dots = document.getElementById("dots");
 	var moreText = document.getElementById("more");
@@ -158,44 +122,41 @@ function myFunction() {
 
 
 
-document.querySelector("#dvPassport").style.display="none";
-document.querySelector("#registartionVendor").style.display="none";
-
 $(function () {
-	$("#chkPassport").click(function () {
+	$(".traderClass").click(function () {
 		if ($(this).is(":checked")) {
-			$("#dvPassport").show();
-			$("#AddPassport").hide();
+			$(".dvPassport").show();
+			$(".AddPassport").hide();
 		} else {
-			$("#dvPassport").hide();
-			$("#AddPassport").show();
+			$(".dvPassport").hide();
+			$(".AddPassport").show();
 		}
 	});
 });
 
 
 $(function () {
-	$("#chkCustomer").click(function () {
+	$(".customerClass").click(function () {
 		if ($(this).is(":checked")) {
-			$("#dvPassport").hide();
-			$("#AddPassport").show();
+			$(".dvPassport").hide();
+			$(".AddPassport").show();
 		} else {
-			$("#dvPassport").show();
-			$("#AddPassport").hide();
+			$(".dvPassport").show();
+			$(".AddPassport").hide();
 		}
 	});
 });
 
-
+document.querySelector(".registrationVendor").style.display = "none";
 
 $(function () {
 	$(".regCustomer").click(function () {
 		if ($("input[name=registration]").is(":checked")) {
 			$(".registrationCustomer").show();
-			$(".registartionVendor").hide();
+			$(".registrationVendor").hide();
 		} else {
 			$(".registrationCustomer").hide();
-			$(".registartionVendor").show();
+			$(".registrationVendor").show();
 		}
 	});
 });
@@ -203,17 +164,19 @@ $(function () {
 	$(".regVendor").click(function () {
 		if ($("input[name=registration]").is(":checked")) {
 			$(".registrationCustomer").hide();
-			$(".registartionVendor").show();
+			$(".registrationVendor").show();
 		} else {
 			$(".registrationCustomer").show();
-			$(".registartionVendor").hide();
+			$(".registrationVendor").hide();
 		}
 	});
 });
 
 
+
+
 $(function () {
 	$("#datepicker-13").datepicker();
-  
-  });
-  
+
+});
+

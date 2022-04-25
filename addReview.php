@@ -118,133 +118,177 @@ include_once('partials/header.php');
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-9 ">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">To be Reviwed <span>(5)</span></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">History <span>(51)</span></button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="dashboard-review">
-                            <div class="row shadow border p-3 background-white">
-                                <div class="col-sm-12 col-md-6 col-lg-7 review-detail-description position-relative">
-                                    <div class="review-date">
-                                        <span>Purchased on 17 April,2022</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex flex-wrap align-items-center">
-                                            <div class="review-image me-3 mt-2">
-                                                <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="reviewd-item-detail">
-                                                <span class="fw-bold">Washing Machine</span>
-                                                <div class="more-detail">
-                                                    <span>Color:Blue</span>
-                                                </div>
-                                            </div>
+                <div class="dashboard-review">
+                    <div class="row shadow border p-4 background-white">
+                        <div class="col-sm-12 col-md-6 col-lg-7 review-detail-description position-relative">
+                            <div>
+                                <div class="review-date">
+                                    <span>Purchased on 17 April,2022</span>
+                                </div>
+                                <div class="mt-2">
+                                    Rate and Review Purchased Product:
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="review-image me-3 mt-2">
+                                            <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
                                         </div>
-                                        <div class="mt-4 d-flex flex-wrap align-items-center">
-                                            <div class="review-image me-3 mt-2">
-                                                <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
+                                        <div class="reviewd-item-detail">
+                                            <span class="fw-bold">Washing Machine</span>
+                                            <div class="more-detail">
+                                                <span>Color:Blue</span>
                                             </div>
-                                            <div class="reviewd-item-detail">
-                                                <span class="fw-bold">Washing Machine</span>
-                                                <div class="more-detail">
-                                                    <span>Color:Blue</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
 
+                                        </div>
+                                    </div>
+
+                                    <div class="review-detail d-flex justify-content-between mt-5">
+                                        <div>
+                                            <span>Review Detail</span>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)" class="text-primary">How to write good review</a>
+                                        </div>
+                                    </div>
+                                    <div class="review-writing-area mt-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <!-- TODO: writing doesn't start from top -->
+                                                <textarea class="w-100 form-control" name="write-review" id="write-review"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <input type="file" name="file" id="file" class="inputfile" />
+                                        <label for="file">
+                                            <i class="fal fa-upload"></i> Upload a Photo
+                                        </label>
+                                    </div>
+
+                                    <div class="review-image-criteria mt-4">
+                                        <h4>Important</h4>
+                                        <span>Maximum 6 Photos can be uploaded</span>
+                                        <ul>
+                                            <li>Image size can be max 5mb</li>
+                                            <li>Takes 24 hrs to verify the image</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
-                                    <div>
-                                        <strong>Sold by:</strong>
-                                        <span>
-                                            <a href="javascript:void(0)" class="text-primary">Manish Maharjan</a>
-                                        </span>
+                            </div>
+                            <div>
+                                <div class="mt-5">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="review-image me-3 mt-2">
+                                            <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="reviewd-item-detail">
+                                            <span class="fw-bold">Washing Machine</span>
+                                            <div class="more-detail">
+                                                <span>Color:Blue</span>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <div class="mt-3">
-                                        <button class="btn btn-theme">Add Review</button>
+
+                                    <div class="review-detail d-flex justify-content-between mt-5">
+                                        <div>
+                                            <span>Review Detail</span>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)" class="text-primary">How to write good review</a>
+                                        </div>
+                                    </div>
+                                    <div class="review-writing-area mt-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <!-- TODO: writing doesn't start from top -->
+                                                <textarea class="w-100 form-control" name="write-review" id="write-review"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <input type="file" name="file" id="file" class="inputfile" />
+                                        <label for="file">
+                                            <i class="fal fa-upload"></i> Upload a Photo
+                                        </label>
+                                    </div>
+
+
+                                    <div class="review-image-criteria mt-4">
+                                        <h4>Important</h4>
+                                        <span>Maximum 6 Photos can be uploaded</span>
+                                        <ul>
+                                            <li>Image size can be max 5mb</li>
+                                            <li>Takes 24 hrs to verify the image</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row shadow border p-3 mt-3 background-white">
-                                <div class="col-sm-12 col-md-6 col-lg-7 review-detail-description position-relative">
-                                    <div class="review-date">
-                                        <span>Purchased on 17 April,2022</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex flex-wrap align-items-center">
-                                            <div class="review-image me-3 mt-2">
-                                                <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="reviewd-item-detail">
-                                                <span class="fw-bold">Washing Machine</span>
-                                                <div class="more-detail">
-                                                    <span>Color:Blue</span>
-                                                </div>
-                                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
+                            <div>
+                                <strong>Sold by:</strong>
+                                <span>
+                                    <a href="javascript:void(0)" class="text-primary">Manish Maharjan</a>
+                                </span>
+                            </div>
+                            <div class="mt-3">
+                                <p>Rate and Review Your Seller:</p>
+                                <div class="px-3">
+
+                                </div>
+
+                                <div class="review-writing-area mt-3">
+                                    <div class="row">
+                                        <span class="mb-1">Review Detail</span>
+                                        <div class="col-12">
+                                            <!-- TODO: writing doesn't start from top -->
+                                            <textarea class="w-100 form-control" name="write-review" id="write-review" placeholder="How is your overall experience with the seller?"></textarea>
                                         </div>
                                     </div>
+                                </div>
+
+
+                                <div class="rider-review mt-5">
+                                    <span>Rate your Rider:</span>
                                     <div>
 
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
-                                    <div>
-                                        <strong>Sold by:</strong>
-                                        <span>
-                                            <a href="javascript:void(0)" class="text-primary">Pranit Bhatta</a>
-                                        </span>
-                                    </div>
-                                    <div class="mt-3">
-                                        <button class="btn btn-theme">Add Review</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row shadow border p-3 mt-3 background-white">
-                                <div class="col-sm-12 col-md-6 col-lg-7 review-detail-description position-relative">
-                                    <div class="review-date">
-                                        <span>Purchased on 17 April,2022</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex flex-wrap align-items-center">
-                                            <div class="review-image me-3 mt-2">
-                                                <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="reviewd-item-detail">
-                                                <span class="fw-bold">Washing Machine</span>
-                                                <div class="more-detail">
-                                                    <span>Color:Blue</span>
+                                        <div class="stars">
+                                            <input type="radio" id="five" name="rate" value="5">
+                                            <label for="five"></label>
+                                            <input type="radio" id="four" name="rate" value="4">
+                                            <label for="four"></label>
+                                            <input type="radio" id="three" name="rate" value="3">
+                                            <label for="three"></label>
+                                            <input type="radio" id="two" name="rate" value="2">
+                                            <label for="two"></label>
+                                            <input type="radio" id="one" name="rate" value="1">
+                                            <label for="one"></label>
+                                        </div>
+                                        <div class="review-writing-area mt-3">
+                                            <div class="row">
+                                                <span class="mb-1">Review Detail</span>
+                                                <div class="col-12">
+                                                    <!-- TODO: writing doesn't start from top -->
+                                                    <textarea class="w-100 form-control" name="write-review" id="write-review" placeholder="How is your overall experience with our rider?"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
-                                    <div>
-                                        <strong>Sold by:</strong>
-                                        <span>
-                                            <a href="javascript:void(0)" class="text-primary">Rahul Gupta</a>
-                                        </span>
-                                    </div>
-                                    <div class="mt-3">
-                                        <button class="btn btn-theme">Add Review</button>
+
+                                        <div class="review-name-option">
+                                            <!-- TODO: toggle function remaining -->
+                                            <div class="text-center mt-3">
+                                                <button class="btn btn-theme">Submit</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
                 </div>
             </div>
         </div>

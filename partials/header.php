@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -31,55 +33,47 @@
     <!-- header-start -->
     <header class="header d-blue-bg">
         <div class="header-top">
-            <div class="container">
-                <div class="header-inside">
-                    <div class="row align-items-center">
-                        <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6">
-                            <div class="header-inside-begin">
-                                <div class="support d-none d-sm-block">
-                                    <p>Need Help? <a href="tel:+001123456789" class="white">+001 123 456 789</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6">
-                            <div class="header-inside-end text-md-end">
-                                <div class="header-menu-wrapper header-menu-wrapper-2">
-                                    <ul>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
-                                        <li><a href="faq.html">FAQs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container d-flex justify-content-between text-white pt-2 pb-0">
+                <div class="phone-number">
+                    <span>Need Help</span>
+                    <a href="phone:9811781631">+977 9811781631</a>
+                </div>
+                <div class="header-nav-section">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">About Us</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">FAQ</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="header-mid">
             <div class="container">
-                <div class="heade-mid-inner">
+                <div class="header-mid-inner pt-30 pb-30">
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-                            <div class="header__info header__info-2">
-                                <div class="logo logo-3">
-                                    <a href="index.html" class="logo-image"><img src="assets/image/logo.png" alt="logo"></a>
-                                </div>
-                                <div class="side-menu mr-20">
-                                    <button type="button" class="side-menu-btn offcanvas-toggle-btn">
-                                        <i class="fas fa-bars"></i>
-                                        </i></button>
+                            <div class="header-mid-info">
+                                <div class="logo">
+                                    <a href="index.php" class="logo-image">
+                                        <img src="assets/image/logo.png" alt="logo">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-4 d-none d-lg-block">
-                            <div class="header__search">
-                                <form action="#">
-                                    <div class="header__search-box">
-                                        <input class="search-input search-input-2" type="text" placeholder="I'm shopping for...">
-                                        <button class="button button-2 button-3" type="submit"><i class="ti-search"></i></button>
+                            <div class="header-search">
+                                <form action="#" class="position-relative">
+                                    <div class="header-search-box w-100 position-relative">
+                                        <input class="search-input" type="text" placeholder="I'm shopping for...">
+                                        <button class="button" type="submit"><i class="ti-search"></i></button>
                                     </div>
-                                    <div class="header__search-cat">
+                                    <div class="header-search-category">
                                         <select class="header-select" style="display: none;">
                                             <option>All Categories</option>
                                             <option>Best Seller Products</option>
@@ -103,7 +97,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-5 col-md-8 col-sm-8">
                             <div class="header-action">
-                                <div class="block-wishlist action">
+                                <div class="header-wishlist action" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     <a class="icon-link icon-link-2" href="wishlist.html">
                                         <i class="fas fa-heart"></i>
                                         <span class="count count-2">0</span>
@@ -112,13 +106,105 @@
                                             My Wishlist </span>
                                     </a>
                                 </div>
-                                <div class="block-userlink">
-                                    <a class="icon-link icon-link-2" href="my-account.html">
+                                <div class="header-login">
+                                    <a class="icon-link icon-link-2" data-bs-toggle="modal" data-bs-target="#Login">
                                         <i class="fas fa-user"></i>
                                         <span class="text">
                                             <span class="sub">Login </span>
                                             My Account </span>
                                     </a>
+                                    <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-lg-6 col-md-6">
+                                                            <div class="login-image">
+                                                                <img src="assets/image/loginImage.png" alt="loginImage" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-lg-6 col-md-6">
+                                                            <form action="">
+                                                                <div class="login-form p-5">
+                                                                    <h3 class="login-form-title">Sign In</h3>
+                                                                    <form>
+                                                                        <div class="dvPassport" style="display: none">
+                                                                            <div class="form-group mb-3">
+                                                                                <label>Shop Email Address</label>
+                                                                                <input type="text" class="form-control" placeholder="Enter your email address">
+                                                                            </div>
+                                                                            <div class="form-group mb-3">
+                                                                                <label>Password</label>
+                                                                                <input type="password" class="form-control" placeholder="Enter your password">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="AddPassport">
+                                                                            <div class="form-group mb-3">
+                                                                                <label>Email Address</label>
+                                                                                <input type="text" class="form-control" placeholder="Enter your email address">
+                                                                            </div>
+                                                                            <div class="form-group mb-3">
+                                                                                <label>Password</label>
+                                                                                <input type="password" class="form-control" placeholder="Enter your password">
+                                                                            </div>
+                                                                            <!-- <div class="login-social-links mt-3">
+                                                                                <div class="login-social-facebook text-center">
+                                                                                    <i class="ti-facebook"></i>
+                                                                                    <span>Login With Facebook</span>
+                                                                                </div>
+                                                                                <div class="login-social-gmail text-center mt-3 mb-3">
+                                                                                    <i class="fas fa-envelope me-3"></i>
+                                                                                    <span>Login With Gmail</span>
+                                                                                </div>
+                                                                            </div> -->
+                                                                        </div>
+                                                                        <div class="mt-20">
+                                                                            <div>
+                                                                                <label for="chkCustomer">
+                                                                                    <input type="radio" name="1" id="chkCustomer" class="customerClass" value="1" checked />
+                                                                                    I am a Customer
+                                                                                </label>
+                                                                            </div>
+                                                                            <div>
+                                                                                <label for="chkPassport">
+                                                                                    <input type="radio" name="1" id="chkPassport" class="traderClass" value="0 v " />
+                                                                                    I am a Trader
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="login_flex_2 mt-3 text-center">
+                                                                            <div class="form-group mb-0">
+                                                                                <button type="submit" class="btn btn-md btn-theme">Login</button>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </form>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <div class="login_flex mt-4">
+                                                        <div class="login_flex_1">
+                                                            <a href="forgot-password.php" class="text-primary">Forget Password?</a>
+                                                        </div>
+                                                        <div class="new-account">
+                                                            <span >Don't Have Any Account?
+                                                                <a href="login.php" class="text-primary">Regsiter Here?</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="block-cart action">
                                     <a class="icon-link icon-link-2" href="cart.html">
@@ -165,7 +251,7 @@
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <a href="cart.html" class="wc-cart mb-10">View cart</a>
+                                                    <a href="mycart.php" class="wc-cart mb-10">View cart</a>
                                                     <a href="checkout.html" class="wc-checkout">Checkout</a>
                                                 </li>
                                             </ul>
@@ -317,114 +403,3 @@
         </div>
     </header>
     <!-- header-end -->
-
-    <!-- //side-menu -->
-    <div class="main-menu">
-        <nav id="mobile-menu-2">
-            <ul>
-                <li class="mean-menu-home"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="shop.html">Shop <i class="fas fa-plus"></i></a>
-                    <ul class="submenu">
-                        <li><a href="shop.html">shop</a></li>
-                        <li><a href="shop-details.html">Shop Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Blog <i class="ti-angle-down"></i></a>
-                    <ul class="submenu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="about.html">Pages <i class="ti-angle-down"></i></a>
-                    <ul class="submenu">
-                        <li><a href="my-account.html">My Account</a></li>
-                        <li><a href="product-details.html">Product Details</a></li>
-                        <li><a href="faq.html">FAQs pages</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="wishlist.html">Wishlist</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- offcanvas area start -->
-    <div class="offcanvas__area">
-        <div class="offcanvas__wrapper">
-            <div class="offcanvas__close">
-                <button class="offcanvas__close-btn" id="offcanvas__close-btn">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="offcanvas__content">
-                <div class="offcanvas__logo mb-40">
-                    <a href="index.html">
-                        <img src="assets/image/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="offcanvas__search mb-25">
-                    <form action="#">
-                        <input type="text" placeholder="What are you searching for?">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="mb-20">
-                    <div class="row">
-                        <div class="col-4  gallery-1 position-relative">
-                            <div class="width-image mb-10 ">
-                                <a class="venobox" data-gall="myGallery" href="assets/image/gal-1.jpg">
-                                    <img src="assets/image/gal-1.jpg" alt="image alt" /></a>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-                            <div class="width-image">
-                                <a class="venobox" data-gall="myGallery" href="assets/image/gal-2.jpg"><img src="assets/image/gal-2.jpg" alt="image alt" /></a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="width-image">
-                                <a class="venobox" data-gall="myGallery" href="assets/image/gal-3.jpg"><img src="assets/image/gal-3.jpg" alt="image alt" /></a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="width-image">
-                                <a class="venobox" data-gall="myGallery" href="assets/image/gal-4.jpg"><img src="assets/image/gal-4.jpg" alt="image alt" /></a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="width-image">
-                                <a class="venobox" data-gall="myGallery" href="assets/image/gal-5.jpg"><img src="assets/image/gal-5.jpg" alt="image alt" /></a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="width-image">
-                                <a class="venobox" data-gall="myGallery" href="assets/image/gal-6.jpg"><img src="assets/image/gal-6.jpg" alt="image alt" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mt-4">
-                        <div class="col-auto">
-                            <nav aria-label="Page navigation">
-
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-menu-2"></div>
-                <div class="offcanvas__action">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- offcanvas area end --> 
-
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>

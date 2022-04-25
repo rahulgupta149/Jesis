@@ -5,7 +5,7 @@ include_once('partials/header.php');
 
 <section class="register">
     <div class="container">
-        <div class="row shadow border-2 pt-3">
+        <div class="row shadow border-2 background-white mt-3 mb-3">
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <img src="" alt="" class="img-fluid">
             </div>
@@ -123,7 +123,7 @@ include_once('partials/header.php');
 
                             <button class="btn btn-theme" type="submit">CREATE ACCOUNT</button>
 
-                            <div class="sign-in-option">
+                            <div class="sign-in-option pb-3">
                                 <span>Already have an account?</span>
                                 <span>
                                     <a href="login.php" style="color: #5dbf13;">SIGN IN</a>

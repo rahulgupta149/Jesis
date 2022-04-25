@@ -15,16 +15,22 @@ include_once('partials/header.php');
             <div>
                 <div class="product-detail-content">
                     <h6>Samsung Galaxy A12, 32GB, Black - (Locked)</h6>
-                    <div class="product-detail-rating mb-10">
-                        <ul class="rating d-flex align-items-center">
-                            <li><a href="#"><i class="fal fa-star"></i></a></li>
-                            <li><a href="#"><i class="fal fa-star"></i></a></li>
-                            <li><a href="#"><i class="fal fa-star"></i></a></li>
-                            <li><a href="#"><i class="fal fa-star"></i></a></li>
-                            <li><a href="#"><i class="fal fa-star"></i></a></li>
-                        </ul>
-                        <span class="position-relative">(01 review)</span>
-                        <span class="position-relative"><a href="#">Add your review</a></span>
+                    <div class="product-detail-rating d-flex flex-wrap mb-10">
+                        <div>
+                            <ul class="rating d-flex align-items-center ">
+                                <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                <li><a href="#"><i class="fal fa-star"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="mx-3">
+                            <span>(01 review)</span>
+                        </div>
+
+
+                        <span class="d-none"><a href="#">Add your review</a></span>
                     </div>
                     <div class="price mb-10">
                         <span>$216.00</span>
@@ -42,7 +48,7 @@ include_once('partials/header.php');
                     </div>
                     <div class="cart-option d-flex mb-15">
 
-                        <a href="cart.html" class="cart-btn me-5">Add to Cart</a>
+                        <button class="btn btn-theme me-4">Add to Cart</button>
                         <div class="quantity">
                             <a href="#" class="arrow minus quantity-minus">
 
@@ -89,9 +95,6 @@ include_once('partials/header.php');
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Comments</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
                     </li>
                 </ul>
@@ -99,7 +102,7 @@ include_once('partials/header.php');
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <h4 class="pt-1">Landing Details</h4>
-                        <p>
+                        <p class="text-justify">
                             Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart.
 
                             Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.
@@ -130,83 +133,10 @@ include_once('partials/header.php');
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="d-flex p-4">
-                            <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
-                            </div>
-                            <div>
-                                <div class="review-written-by">
-                                    <span>by</span> <span class="review-written-name fw-bold text-uppercase">Anna</span>
-                                    <span class="review-written-date">on July 14, 2021</span>
-                                </div>
-                                <div>
-                                    <span class="fw-light">Very Good!</span>
-                                </div>
-                                <div class="mt-1">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dignissimos obcaecati laudantium perferendis optio ratione assumenda dolorum quae omnis tempora deleniti nesciunt, veniam, doloremque enim provident non maiores mollitia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex p-4 mt-2">
-                            <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
-                            </div>
-                            <div>
-                                <div class="review-written-by">
-                                    <span>by</span> <span class="review-written-name fw-bold text-uppercase">Anna</span>
-                                    <span class="review-written-date">on July 14, 2021</span>
-                                </div>
-                                <div>
-                                    <span class="fw-light">Very Good!</span>
-                                </div>
-                                <div class="mt-1">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dignissimos obcaecati laudantium perferendis optio ratione assumenda dolorum quae omnis tempora deleniti nesciunt, veniam, doloremque enim provident non maiores mollitia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex p-4 mt-2">
-                            <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
-                            </div>
-                            <div>
-                                <div class="review-written-by">
-                                    <span>by</span> <span class="review-written-name fw-bold text-uppercase">Anna</span>
-                                    <span class="review-written-date">on July 14, 2021</span>
-                                </div>
-                                <div>
-                                    <span class="fw-light">Very Good!</span>
-                                </div>
-                                <div class="mt-1">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dignissimos obcaecati laudantium perferendis optio ratione assumenda dolorum quae omnis tempora deleniti nesciunt, veniam, doloremque enim provident non maiores mollitia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex p-4 mt-2">
-                            <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
-                            </div>
-                            <div>
-                                <div class="review-written-by">
-                                    <span>by</span> <span class="review-written-name fw-bold text-uppercase">Anna</span>
-                                    <span class="review-written-date">on July 14, 2021</span>
-                                </div>
-                                <div>
-                                    <span class="fw-light">Very Good!</span>
-                                </div>
-                                <div class="mt-1">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dignissimos obcaecati laudantium perferendis optio ratione assumenda dolorum quae omnis tempora deleniti nesciunt, veniam, doloremque enim provident non maiores mollitia.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="d-flex p-4">
                             <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
+                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="">
                             </div>
                             <div>
                                 <div class="product-rating mt-2">
@@ -231,7 +161,7 @@ include_once('partials/header.php');
                         <hr>
                         <div class="d-flex p-4 mt-2">
                             <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
+                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="">
                             </div>
                             <div>
                                 <div class="product-rating mt-2">
@@ -256,7 +186,7 @@ include_once('partials/header.php');
                         <hr>
                         <div class="d-flex p-4 mt-2">
                             <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
+                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="">
                             </div>
                             <div>
                                 <div class="product-rating mt-2">
@@ -281,7 +211,7 @@ include_once('partials/header.php');
                         <hr>
                         <div class="d-flex p-4 mt-2">
                             <div class="review-image me-4">
-                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="" >
+                                <img src="assets/image/owner-avatar-img.jpg" width="100" height="100" alt="">
                             </div>
                             <div>
                                 <div class="product-rating mt-2">

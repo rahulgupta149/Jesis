@@ -164,7 +164,7 @@ include_once('partials/header.php');
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
                                     <div>
-                                        <strong>Sold by:</strong>
+                                        <span>Sold by:</span>
                                         <span>
                                             <a href="javascript:void(0)" class="text-primary">Manish Maharjan</a>
                                         </span>
@@ -201,7 +201,7 @@ include_once('partials/header.php');
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
                                     <div>
-                                        <strong>Sold by:</strong>
+                                        <span>Sold by:</span>
                                         <span>
                                             <a href="javascript:void(0)" class="text-primary">Pranit Bhatta</a>
                                         </span>
@@ -236,7 +236,7 @@ include_once('partials/header.php');
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
                                     <div>
-                                        <strong>Sold by:</strong>
+                                        <span>Sold by:</span>
                                         <span>
                                             <a href="javascript:void(0)" class="text-primary">Rahul Gupta</a>
                                         </span>
@@ -250,10 +250,80 @@ include_once('partials/header.php');
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row shadow border p-3 mt-3 background-white">
+                            <div class="col-sm-12 col-md-6 col-lg-7 review-detail-description position-relative">
+                                <div class="review-date">
+                                    <span>Purchased on 17 April,2022</span>
+                                </div>
+                                <div>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="review-image me-3 mt-2">
+                                            <img src="assets/image/order1.jpg" width="80px" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="reviewd-item-detail">
+                                            <span class="fw-bold">Washing Machine</span>
+                                            <div class="more-detail">
+                                                <span>Color:Blue</span>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star"></span>
+                                                <span class="mx-2">Deligthful</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 px-3 pt-3">
+                                <div>
+                                    <span>Sold by:</span>
+                                    <span>
+                                        <a href="javascript:void(0)" class="text-primary">Manish Maharjan</a>
+                                    </span>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="mb-2">
+                                    <span class="fw-bold">Your Seller Review</span>
+                                    </div>
+                                    
+                                        <div>
+                                            <img src="assets/image/happiness.png" width="50px" alt="" class="img-fluid">
+                                            <span class="mx-3">Happy</span>
+                                        </div>
+
+                                        <div class="review-writing-area mt-3">
+                                            <div class="row">
+                                                <span class="mb-2 fw-bold">Rate Your Rider</span>
+                                                <div class="rating">
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star checked"></span>
+                                                <span class="far fa-star"></span>
+                                                <span class="mx-2">Deligthful</span>
+
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
 </section>
